@@ -1118,8 +1118,294 @@
 <p><strong>4. 中国公司的位置：制造强、份额强、品牌弱（除了两个例外）。</strong> 例外是清洁电器和智能影像——这两个品类的共同点是"中国企业定义过产品"（基站、全景算法），而不是"跟着别人做"。<strong>定义过产品，才有品牌。</strong></p>
 <p><strong>5. AI 加成的真实效果有限。</strong> AI 眼镜退货率 30%–70%、AI 玩具退货率 30%–40%、智能音箱接入大模型后销量还是 -41.8%。AI 能提升均价 10%–20%，但撑不起一个品类。真正靠 AI 起来的品类还没出现。</p>
 <p><strong>6. 品类黄金期 12–18 个月。</strong> 方案商成熟、供应链复制、电商放大，三个因素叠加，任何爆款都很快变成红海。这意味着<strong>投入研发的公司必须在 18 个月内收回成本</strong>，否则就是给后来者做嫁衣。</p>
-<h2>七、商业模式</h2>
-<h3>7.1 三种钱</h3>
+<h2>七、AI 原生硬件：大模型给了什么，又拿走了什么</h2>
+<p>这一章单独说一类东西：不是"传统硬件加了 AI 功能"，而是"因为大模型才存在的硬件"。AI 眼镜、AI 录音卡、AI 吊坠、AI 学习机、AI 玩具，都算。</p>
+<p>这个方向过去三年死了一大批，也活下来几个。活下来的和死掉的，差别不在技术，在产品定义。</p>
+<h3>7.1 先把三类分开</h3>
+<p>市面上说的"AI 硬件"，其实混了三种完全不同的东西：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">定义</th>
+<th style="text-align: left;">代表</th>
+<th style="text-align: left;">结局</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">A 类：加 AI 的传统硬件</td>
+<td style="text-align: left;">原本就有明确用途，AI 是加分项</td>
+<td style="text-align: left;">扫地机、智能音箱、手表</td>
+<td style="text-align: left;">活着，但 AI 只提升 10%–20% 均价</td>
+</tr>
+<tr>
+<td style="text-align: left;">B 类：为 AI 重新设计的硬件</td>
+<td style="text-align: left;">大模型出现后才有意义的新形态</td>
+<td style="text-align: left;">AI 录音卡、AI 眼镜、AI 学习机</td>
+<td style="text-align: left;">少数跑通，多数在找场景</td>
+</tr>
+<tr>
+<td style="text-align: left;">C 类：想替代手机的通用设备</td>
+<td style="text-align: left;">用语音/投影取代屏幕交互</td>
+<td style="text-align: left;">Humane AI Pin、Rabbit R1</td>
+<td style="text-align: left;">基本全败</td>
+</tr>
+</tbody>
+</table>
+<p><strong>这个区分很重要，因为三类的成败逻辑完全不同。</strong> A 类比的是供应链和渠道，B 类比的是"任务是否够窄"，C 类比的是"能不能替代手机"——而最后这个命题，目前没有成功案例。</p>
+<h3>7.2 C 类：想替代手机的，基本都死了</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品</th>
+<th style="text-align: left;">融资/销量</th>
+<th style="text-align: left;">结局</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Humane AI Pin</td>
+<td style="text-align: left;">融资 2.3 亿美元</td>
+<td style="text-align: left;">2025 年 2 月关停，资产 1.16 亿美元卖给惠普</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rabbit R1</td>
+<td style="text-align: left;">首销 10 万台</td>
+<td style="text-align: left;">评测"未完成、不稳定、集成有限"，转向做"AI 电脑控制器"</td>
+</tr>
+<tr>
+<td style="text-align: left;">Limitless Pendant</td>
+<td style="text-align: left;">融资 3300 万美元（a16z、Altman 投）</td>
+<td style="text-align: left;">2025 年 12 月被 Meta 收购，停止向新买家销售</td>
+</tr>
+</tbody>
+</table>
+<p>Humane 是 AI 硬件最著名的失败案例：2.3 亿美元融资、前苹果设计师站台、发布时全网刷屏，最后因为性能不达标、充电盒有电池起火风险，直接关停。Rabbit R1 更典型——CES 发布、首销 10 万台，但早期评测说它"像半成品"，实用的集成功能很少。</p>
+<p><strong>我的看法：这三个产品的失败不是技术问题，是产品定义问题。</strong></p>
+<p>手机已经解决了 90% 的场景，剩下 10%（免手持、随时在场）撑不起一台独立设备。而且语音交互在公共场合不可用——你在会议室对着胸针小声说话，比掏手机更尴尬。投影交互在光线好的地方看不清。</p>
+<p><strong>"替代手机"是错误的目标，"补手机的短板"才是对的。</strong> 这句话可以解释后面所有的成败。</p>
+<h3>7.3 B 类：转录为什么先跑通</h3>
+<p>在 B 类里，跑得最实的是 AI 录音设备。</p>
+<p><strong>Plaud 的数据</strong>（这家公司值得单独看）：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">指标</th>
+<th style="text-align: left;">数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">累计出货（2026.6）</td>
+<td style="text-align: left;">超 200 万台</td>
+</tr>
+<tr>
+<td style="text-align: left;">覆盖市场</td>
+<td style="text-align: left;">170 多个国家和地区</td>
+</tr>
+<tr>
+<td style="text-align: left;">累计 GMV</td>
+<td style="text-align: left;">超 5 亿美元</td>
+</tr>
+<tr>
+<td style="text-align: left;">软件订阅 ARR</td>
+<td style="text-align: left;">超 1 亿美元</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026 销售目标</td>
+<td style="text-align: left;">5 亿美元</td>
+</tr>
+<tr>
+<td style="text-align: left;">主力价格</td>
+<td style="text-align: left;">159–189 美元（行业均价约 3 倍）</td>
+</tr>
+<tr>
+<td style="text-align: left;">融资</td>
+<td style="text-align: left;"><strong>没有拿过 VC</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">估值</td>
+<td style="text-align: left;">约 100 亿人民币</td>
+</tr>
+</tbody>
+</table>
+<p>几个细节很说明问题：</p>
+<ul>
+<li>2022 年先推了一款<strong>没有 AI 功能</strong>的智能录音笔，半年就盈利了。ChatGPT 出来之后才把大模型叠上去。<strong>先验证需求，再加 AI</strong>，顺序和大多数 AI 硬件公司相反。</li>
+<li>目标人群是"三高"：高对话依赖、高知识密度、高决策杠杆——高管、医生、律师、销售、金融。不是大众市场。</li>
+<li>产品形态一路在变：卡片（磁吸手机背面）→ 胸针（NotePin，179 美元、20 小时连续录音、64GB）→ 桌面设备。</li>
+<li>Kickstarter 7000 多人、众筹超 100 万美元起步，然后进 Amazon、Best Buy、Walmart。</li>
+</ul>
+<p><strong>为什么转录能跑通，我总结成四个条件：</strong></p>
+<ol>
+<li><strong>任务窄而烦。</strong> 会议纪要这件事，人人都烦，但没有一家公司把它做成标准服务。手机能录音，但"录完之后那几个小时的整理"没人解决。</li>
+<li><strong>结果可验证。</strong> 纪要准不准，用户一眼能看出来。这比"AI 帮你决策"这种模糊承诺可信得多。</li>
+<li><strong>有明确的起点。</strong> 按一下按钮开始录。这个动作让用户"知道自己在记录"，心理上是可控的。</li>
+<li><strong>手机做不到的部分，硬件补上了。</strong> 连续 20 小时、64GB 本地加密、戴在身上不用掏手机——这些是手机做不到的。</li>
+</ol>
+<p>对照一下：AI Pin 也满足了 2 和 3，但它的任务是"通用助手"，太宽，而且想替代手机；所以它失败了。<strong>Plaud 的成功，很大程度上是因为它没想取代任何东西。</strong></p>
+<h3>7.4 眼镜：录音是唯一被保留的功能</h3>
+<p>有意思的是，AI 眼镜在做功能取舍时，最后保留下来的是录音。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品</th>
+<th style="text-align: right;">重量</th>
+<th style="text-align: right;">麦克风</th>
+<th style="text-align: right;">续航</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">界环 AI 音频眼镜特别版</td>
+<td style="text-align: right;">26.4 克</td>
+<td style="text-align: right;">4 颗</td>
+<td style="text-align: right;">14 小时</td>
+</tr>
+<tr>
+<td style="text-align: left;">海信 Vidda G11</td>
+<td style="text-align: right;">26.5 克</td>
+<td style="text-align: right;">6 颗</td>
+<td style="text-align: right;">25 小时</td>
+</tr>
+</tbody>
+</table>
+<p>逻辑很直接：眼镜离耳朵和嘴最近，又一直处于"待机"状态，是最自然的第一人称音频入口。用户不用调整设备位置，也不用在桌上多放一件东西。</p>
+<p>这带来一个更进一步的判断：<strong>录音卡片和录音笔需要用户"意识到这段值得记"，然后掏设备、按按钮；眼镜不需要。</strong> 走廊里的一句补充、会议结束前客户提的交付时间，这些信息没有明确的起点，只有"一直在场"的设备才能抓到。</p>
+<p>但眼镜的问题也在这——它什么都能做（拍照、翻译、导航、通话、录音），什么都做不好。<strong>功能越多，越难让用户记住"我为什么要戴它"。</strong> 这是我在第五章说"AI 眼镜不会是下一代计算平台"的另一个理由。</p>
+<h3>7.5 教育硬件：AI 硬件里真正的现金牛</h3>
+<p>如果只看赚钱，AI 学习机比 AI 眼镜、AI 玩具都实在。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">指标</th>
+<th style="text-align: left;">数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">中国教育智能硬件市场（2026E）</td>
+<td style="text-align: left;">1850 亿元（+12.5%）</td>
+</tr>
+<tr>
+<td style="text-align: left;">学习平板 2025 销量</td>
+<td style="text-align: left;">632.1 万台（+6.7%）、199.1 亿元（+4.5%）</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026 预测销量</td>
+<td style="text-align: left;">526.8 万台（<strong>-16.7%</strong>），另有口径 497 万台（-21.3%）</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026 Q3 销量</td>
+<td style="text-align: left;">125.0 万台（<strong>-30.8%</strong>）</td>
+</tr>
+<tr>
+<td style="text-align: left;">份额（2026 Q3）</td>
+<td style="text-align: left;">作业帮 34.7%、科大讯飞 20.2%、学而思 16.4%、小猿；前四 82.0%</td>
+</tr>
+<tr>
+<td style="text-align: left;">AI 渗透率</td>
+<td style="text-align: left;">79.7%（2026 年 7 月），2023 年只有 20%</td>
+</tr>
+<tr>
+<td style="text-align: left;">主力价格带</td>
+<td style="text-align: left;">2000–2999 元占 52.2%（同比 +21.2pct）</td>
+</tr>
+<tr>
+<td style="text-align: left;">硬件净利率</td>
+<td style="text-align: left;"><strong>不到 10%</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">内容续费率</td>
+<td style="text-align: left;">头部超 40%；科大讯飞批改服务超 80%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>这个品类的真相是：硬件不赚钱，钱在内容订阅。</strong></p>
+<p>一台学习机卖 3000 元，硬件净利不到 300 元；但后续的课程、批改、题库续费，续费率能到 40%–80%。所以它的商业模型和 AI 玩具一样——<strong>硬件是入口，内容是利润</strong>。</p>
+<p>也正因如此，它的竞争壁垒不在 AI，在内容和渠道：作业帮靠题库、学而思靠教研、讯飞靠 5 万所学校的 B 端网络（B 端反哺 C 端）。纯做硬件的公司进不来。</p>
+<p>隐忧也很明显：2026 年销量跌 16.7% 到 30.8%，国补退坡后需求真空；黑猫投诉平台上学习机相关投诉超 1 万条，集中在"AI 批改出错、作文评语模板化、复杂题标'超纲'"。<strong>AI 能力被宣传得比实际强，这是这个品类最大的信誉风险。</strong></p>
+<h3>7.6 Agent 的两面：能做事，也会吃掉你</h3>
+<p>Agent 对 AI 硬件是双刃剑，这一点值得说清楚。</p>
+<p><strong>好的一面：硬件从"记录设备"变成"执行设备"。</strong> 以前录音笔给你一段文字，现在可以自动生成纪要、提取待办、写进日历、发给相关人。这个链条每多一步，硬件的价值就多一分——因为用户买的不再是"录音"，是"省下来的时间"。</p>
+<p><strong>坏的一面：通用 Agent 会吞掉垂直工具。</strong> 这不是假设，已经发生了：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品</th>
+<th style="text-align: left;">关停时间</th>
+<th style="text-align: left;">原因</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Notion Mail</td>
+<td style="text-align: left;">2026 年 9 月</td>
+<td style="text-align: left;">用户转用独立的通用 AI Agent 处理收件箱</td>
+</tr>
+<tr>
+<td style="text-align: left;">Relay（Agent 工作流）</td>
+<td style="text-align: left;">2026 年 8 月</td>
+<td style="text-align: left;">OpenAI、Google 把同样能力内建进自家产品</td>
+</tr>
+<tr>
+<td style="text-align: left;">Huxe（AI 音频）</td>
+<td style="text-align: left;">2026 年 5 月</td>
+<td style="text-align: left;">Spotify 等平台向存量用户提供同类功能</td>
+</tr>
+</tbody>
+</table>
+<p>S&amp;P Global 的数字更冷：<strong>约 42% 的企业 AI 项目最终被放弃。</strong></p>
+<p>对 AI 硬件的启示是：<strong>如果你的价值只是"调用大模型做一件软件能做的事"，那你迟早被软件吃掉。</strong> 硬件必须提供软件给不了的东西——确定性（按下就录、20 小时续航）、隐私（本地加密）、物理在场（戴在身上、放在桌上）。</p>
+<p>这也是 Plaud 敢卖 3 倍均价的原因：用户买的不是"转录能力"（手机也能），是"我确定它录上了"。</p>
+<h3>7.7 五个问题的判断清单</h3>
+<p>看任何一个 AI 硬件项目，我会先问这五个问题：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">问题</th>
+<th style="text-align: left;">为什么重要</th>
+<th style="text-align: left;">反例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1. 任务是否"窄而烦"？</td>
+<td style="text-align: left;">宽任务拼不过手机和通用 Agent</td>
+<td style="text-align: left;">AI Pin 想做通用助手，失败</td>
+</tr>
+<tr>
+<td style="text-align: left;">2. 结果是否可验证？</td>
+<td style="text-align: left;">用户能判断好坏，才会复购和续费</td>
+<td style="text-align: left;">"AI 帮你决策"无法验证</td>
+</tr>
+<tr>
+<td style="text-align: left;">3. 手机/Agent 为什么做不好？</td>
+<td style="text-align: left;">说不出差异，就没有存在理由</td>
+<td style="text-align: left;">Rabbit R1 的功能手机都能做</td>
+</tr>
+<tr>
+<td style="text-align: left;">4. 硬件是否提供确定性？</td>
+<td style="text-align: left;">续航、隐私、佩戴、即时响应</td>
+<td style="text-align: left;">需要频繁充电的设备会掉使用率</td>
+</tr>
+<tr>
+<td style="text-align: left;">5. 订阅是否成立？</td>
+<td style="text-align: left;">硬件净利低于 10%，靠服务赚钱</td>
+<td style="text-align: left;">一次性买断 + 云端成本 = 卖越多亏越多</td>
+</tr>
+</tbody>
+</table>
+<p>五个都过，才值得看。只过前三个的，是"有趣的 demo"；只过后两个的，是"带 AI 的传统硬件"。</p>
+<h3>7.8 我的判断</h3>
+<p><strong>1. AI 硬件的机会不在"通用"，在"专用"。</strong> 过去三年所有想做"AI 入口"的公司都失败了，所有做"解决一个具体麻烦"的公司都活下来了。Plaud 卖会议纪要、学习机卖作业辅导、扫地机卖不用拖地——都是同一个逻辑。</p>
+<p><strong>2. 转录是目前最被验证的品类，但天花板不高。</strong> Plaud 200 万台、5 亿美元 GMV，已经是很扎实的生意；但"会议纪要"这个任务全球潜在用户可能就几千万人，做到 500 万台就到顶了。它的下一步要么扩品类（医疗、法律专用），要么被平台收编（就像 Limitless 被 Meta 收购）。</p>
+<p><strong>3. 眼镜是最有想象空间、也最容易高估的。</strong> 它的形态对（一直在场、离感官近），但功能太散、重量和续航受限。真正让它成立的，可能不是"AI 助手"，而是"录音 + 拍照 + 翻译"这三个确定的功能。</p>
+<p><strong>4. 教育硬件是最赚钱、也最不像"AI 硬件"的。</strong> 它的钱在内容和渠道，不在硬件也不在模型。用 AI 硬件的估值方法去看它，会看错。</p>
+<p><strong>5. 未来两年会有一批"AI 硬件"公司消失。</strong> 原因不是技术不行，是它们的价值被手机端 Agent 覆盖了。判断标准很简单：<strong>如果把这个硬件拿掉、只留一个 App，用户会不会觉得少了什么？</strong> 如果不会，那这个硬件就不该存在。</p>
+<h2>八、商业模式</h2>
+<h3>8.1 三种钱</h3>
 <table>
 <thead>
 <tr>
@@ -1155,7 +1441,7 @@
 </tbody>
 </table>
 <p>中国公司大多停在第一种和第二种，第三种很少。原因是<strong>订阅需要生态和账号体系</strong>，而这正是中国硬件公司最弱的一环。</p>
-<h3>7.2 出海：不是选择题，是必答题</h3>
+<h3>8.2 出海：不是选择题，是必答题</h3>
 <table>
 <thead>
 <tr>
@@ -1193,7 +1479,7 @@
 </tbody>
 </table>
 <p>出海的共同点：<strong>先做亚马逊，再做线下渠道，最后做品牌</strong>。安克是这条路线的教科书——它的销售费用率极高（亚马逊广告 + 线下进场费），所以毛利 48% 但净利只有 8% 左右。这是"用利润换份额"的打法。</p>
-<h3>7.3 品类生命周期在缩短</h3>
+<h3>8.3 品类生命周期在缩短</h3>
 <p>我粗略算了一下几个品类的"从爆发到红海"的时间：</p>
 <table>
 <thead>
@@ -1232,7 +1518,7 @@
 </tbody>
 </table>
 <p>原因有三个：方案商（公版方案）成熟太快、供应链复制太快、电商渠道放大太快。结果是<strong>谁能在一个品类里建立品牌，谁就必须在 18 个月内把利润赚回来</strong>，之后就是价格战。</p>
-<h2>八、瓶颈</h2>
+<h2>九、瓶颈</h2>
 <table>
 <thead>
 <tr>
@@ -1275,8 +1561,8 @@
 </tbody>
 </table>
 <p><strong>前三项是我最担心的。</strong> 同质化决定了毛利下行，AI 功能无付费意愿决定了溢价不可持续，上游涨价决定了尾部出清。三件事叠加，2027 年这个行业会有一次比较明显的洗牌。</p>
-<h2>九、格局</h2>
-<h3>9.1 三类玩家</h3>
+<h2>十、格局</h2>
+<h3>10.1 三类玩家</h3>
 <table>
 <thead>
 <tr>
@@ -1308,7 +1594,7 @@
 </tbody>
 </table>
 <p>2026 年的趋势是<strong>专业品牌在赢单品，生态厂在赢入口</strong>。扫地机、影像这类"功能明确"的品类，专业品牌更有优势；眼镜、耳机这类"依附手机"的品类，生态厂更有优势。</p>
-<h3>9.2 国内 vs 全球：两套排名</h3>
+<h3>10.2 国内 vs 全球：两套排名</h3>
 <p>以扫地机为例：</p>
 <table>
 <thead>
@@ -1338,7 +1624,7 @@
 </tbody>
 </table>
 <p>同一批公司，排名完全不同。原因是<strong>国内靠渠道和价格，海外靠品牌和产品力</strong>。追觅在国内只有 12.8%，但在全球是第二——它的重心在海外。</p>
-<h3>9.3 谁在赚钱</h3>
+<h3>10.3 谁在赚钱</h3>
 <p>从毛利和净利看：</p>
 <ul>
 <li><strong>最赚钱</strong>：芯片（乐鑫毛利 50%、净利 24.6%）、品牌出海（石头净利 11.3%）；</li>
@@ -1346,7 +1632,7 @@
 <li><strong>最不赚钱</strong>：组装（歌尔毛利 13.7%、净利 3.8%）、传统结构件（蓝思净利 -50%）。</li>
 </ul>
 <p>这个排序和十年前比，最大的变化是<strong>组装环节被挤到了最底下</strong>。自动化 + 中国产能过剩，让"制造"这件事本身不值钱了。</p>
-<h2>十、空间测算：三种情景</h2>
+<h2>十一、空间测算：三种情景</h2>
 <p>这一节是我的估算，误差不会小。基准是全球智能硬件出货 46.5 亿台、规模 5820 亿美元（2026），行业 CAGR 假设 8.1%（多家机构的中位数）。</p>
 <table>
 <thead>
@@ -1391,7 +1677,7 @@
 <li>扫地机的增量在海外，全球出货从 2412 万台（2025）到 4500 万台（2030）需要欧洲和北美渗透率从 15%–20% 提到 30%；</li>
 <li>手表手环的天花板取决于医疗资质，如果无创血糖落地，这个品类能重估。</li>
 </ol>
-<h2>十一、风险</h2>
+<h2>十二、风险</h2>
 <table>
 <thead>
 <tr>
@@ -1447,7 +1733,7 @@
 </tbody>
 </table>
 <p>我个人的排序：<strong>近期最该担心的是 AI 眼镜证伪和估值，中期是存储涨价，长期是品牌溢价拿不到。</strong></p>
-<h2>十二、公司数据</h2>
+<h2>十三、公司数据</h2>
 <p>数据来自 2026 年三季报与 2025 年年报，单位人民币。</p>
 <table>
 <thead>
