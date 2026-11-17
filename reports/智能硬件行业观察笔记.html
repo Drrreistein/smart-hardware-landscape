@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>智能硬件行业观察笔记</title>
+<style>
+  :root { color-scheme: light; }
+  body {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    font-size: 16px;
+    line-height: 1.85;
+    color: #222;
+    background: #fff;
+  }
+  h1 { font-size: 1.9em; font-weight: 600; margin: 0 0 .6em; line-height: 1.35; }
+  h2 { font-size: 1.32em; font-weight: 600; margin: 2.2em 0 .7em; padding-bottom: .25em; border-bottom: 1px solid #e8e8e8; }
+  h3 { font-size: 1.1em; font-weight: 600; margin: 1.6em 0 .5em; }
+  p { margin: .9em 0; }
+  blockquote {
+    margin: 1.2em 0; padding: .2em 1em;
+    border-left: 3px solid #ddd; color: #555;
+  }
+  blockquote p { margin: .5em 0; }
+  ul, ol { padding-left: 1.4em; margin: .9em 0; }
+  li { margin: .35em 0; }
+  table {
+    border-collapse: collapse; width: 100%;
+    margin: 1.3em 0; font-size: .93em;
+    display: block; overflow-x: auto;
+  }
+  th, td { border: 1px solid #e2e2e2; padding: 7px 10px; text-align: left; vertical-align: top; }
+  th { background: #fafafa; font-weight: 600; white-space: nowrap; }
+  strong { font-weight: 600; }
+  hr { border: 0; border-top: 1px solid #e8e8e8; margin: 2.4em 0; }
+  a { color: #1a5fb4; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { background: #f5f5f5; padding: .1em .35em; border-radius: 3px; font-size: .9em; }
+  img { max-width: 100%; height: auto; }
+</style>
+</head>
+<body>
+<h1>智能硬件行业观察笔记</h1>
+<blockquote>
+<p>个人整理的行业笔记，不是正式研报。数据来自公开信息，看法难免有偏差，仅供参考。数据截至 2026 年 10 月。</p>
+</blockquote>
+<h2>一、先说结论</h2>
+<p>这个行业今年最反常识的地方，是"整体在退、局部在爆"。2026 年三季度全球智能手机出货 2.553 亿部，同比跌 22%，是有记录以来最大的单季降幅；同期 AI 眼镜上半年出货 711 万台、同比涨了七成，扫地机器人全球二季度涨 21.5%。用一句"消费电子复苏"或者"需求疲软"来概括，都是错的。</p>
+<p>我自己的判断有这么几条：</p>
+<p><strong>1. 这不是增长行业，是结构性换血。</strong> 手机在退，新品类在进，总量可能只涨个位数，但内部结构每两年换一批。看这个行业不要看总量，要看"哪个品类正在接过手机的预算"。</p>
+<p><strong>2. 中国公司拿走了制造和份额，没拿到品牌溢价。</strong> 全球 AI 眼镜约 80% 由中国制造，除 Meta 之外的头部品牌几乎全是中国公司；但 Meta 一家占了 84% 的份额，赚走了品牌和生态的钱。扫地机更彻底——全球前五全是中国品牌，iRobot 已经破产被深圳杉川收购——这是少数中国公司既拿份额又拿利润的品类。</p>
+<p><strong>3. AI 目前是溢价工具，不是需求。</strong> 这是我最想强调的一条。AI 眼镜行业退货率 30% 到 70%，200 多项 AI 功能长期使用率不足 6%。功能可以写进发布会，但用户不会为用不上的功能持续付钱。</p>
+<p><strong>4. 真正拉开差距的是渠道和品牌，不是技术。</strong> 扫地机的激光导航、AI 避障、自清洁基站，中国几家都能做，但石头在海外能卖上价（欧洲市占 45%、北美 33%），靠的是渠道前置仓和品牌，不是算法领先。</p>
+<p><strong>5. 上游涨价在吃利润，而且吃得很快。</strong> 2025 年三季度到 2026 年一季度内存价格翻了一倍以上，二季度又涨 80% 到 90%。蓝思科技前三季净利跌 50%，恒玄科技跌 57%，都是这个逻辑。</p>
+<p><strong>6. 品类的黄金期在缩短。</strong> 从爆款到红海，过去要三五年，现在 12 到 18 个月。AI 眼镜 2025 年还是"元年"，2026 年已经在打价格战，200 多个品牌挤进来，中国线上半年清退了 11 个扫地机品牌。</p>
+<p><strong>7. 估值是按成长股给的，生意是制造业的。</strong> 这个板块大部分公司毛利 13% 到 20%（组装）、20% 到 40%（整机品牌）、40% 到 50%（芯片），净利率个位数到十几个点。给 40 倍 PE 的时候，要清楚买的是"下一个爆款"的期权。</p>
+<h2>二、这些数字的口径</h2>
+<p>智能硬件是我见过口径最乱的行业之一，比大模型还乱——因为"智能硬件"这四个字本身没有定义。</p>
+<h3>2.1 市场规模：三个数差三倍</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">来源</th>
+<th style="text-align: right;">2026 年全球规模</th>
+<th style="text-align: left;">口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">产业世界（A）</td>
+<td style="text-align: right;">5820 亿美元，出货 46.5 亿台</td>
+<td style="text-align: left;">消费级为主，含可穿戴、家居、耳机</td>
+</tr>
+<tr>
+<td style="text-align: left;">产业世界（B）</td>
+<td style="text-align: right;">1.82 万亿美元</td>
+<td style="text-align: left;">含工业物联网终端、商用设备</td>
+</tr>
+<tr>
+<td style="text-align: left;">全球智能设备价值链报告</td>
+<td style="text-align: right;">1.87 万亿美元，出货 38.6 亿台</td>
+<td style="text-align: left;">含手机、平板、工业终端</td>
+</tr>
+<tr>
+<td style="text-align: left;">Straits Research</td>
+<td style="text-align: right;">9087 亿美元</td>
+<td style="text-align: left;">只算"消费电子"</td>
+</tr>
+</tbody>
+</table>
+<p>有意思的是，1.82 万亿美元配 46.5 亿台，1.87 万亿配 38.6 亿台——<strong>出货更少的那个，规模反而更大</strong>，因为它把单价高的工业设备和手机都算进去了。</p>
+<p>5820 亿这个数我验算过：46.5 亿台 × 均价 125 美元 ≈ 5812 亿美元，能对上。所以它对应的是"消费级智能硬件、均价一百多美元"的口径，比较接近我们平时说的东西。</p>
+<p>中国这边同样乱：消费电子 2.1 万亿元、智能家居 8000 亿元、可穿戴 1378 亿元、消费级 AI 硬件 1.27 万亿元。<strong>1.27 万亿这个"AI 硬件"口径，几乎把整个消费电子都装进去了</strong>，用它来说"AI 硬件市场很大"没有意义。</p>
+<h3>2.2 AI 眼镜：出货量有五个版本</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">来源</th>
+<th style="text-align: right;">数字</th>
+<th style="text-align: left;">时点与口径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Omdia</td>
+<td style="text-align: right;">870 万台（+322%）</td>
+<td style="text-align: left;">2025 全年，AI 眼镜</td>
+</tr>
+<tr>
+<td style="text-align: left;">IDC</td>
+<td style="text-align: right;">711.4 万台（+70.5%）</td>
+<td style="text-align: left;">2026 上半年，智能眼镜</td>
+</tr>
+<tr>
+<td style="text-align: left;">IDC</td>
+<td style="text-align: right;">356.6 万台（+130.1%）</td>
+<td style="text-align: left;">2026 Q1，智能眼镜全品类</td>
+</tr>
+<tr>
+<td style="text-align: left;">Counterpoint</td>
+<td style="text-align: right;">同比 +263%</td>
+<td style="text-align: left;">2026 上半年，AI 眼镜</td>
+</tr>
+<tr>
+<td style="text-align: left;">Smart Glasses Daily</td>
+<td style="text-align: right;">约 1700 万台</td>
+<td style="text-align: left;">2026 全年预测（H1 实际 720 万 + H2 预测 980 万）</td>
+</tr>
+<tr>
+<td style="text-align: left;">SAG</td>
+<td style="text-align: right;">2200 万台以上</td>
+<td style="text-align: left;">2026 全年，眼穿戴（含 AR/VR）</td>
+</tr>
+</tbody>
+</table>
+<p>从 711 万到 2200 万，差三倍。差别在三个地方：<strong>统计的是"AI 眼镜"还是"智能眼镜全品类"（含 AR、VR）；是上半年实际还是全年预测；是 sell-in（压给渠道）还是 sell-through（卖给用户）。</strong></p>
+<p>行业里有个说法我觉得挺准：AI 眼镜目前是"渠道出货好看、终端动销一般"。退货率 30% 到 70% 这个数字，比任何出货量都更能说明问题。</p>
+<h3>2.3 Meta 的份额：五个数</h3>
+<p>75.7%、81%、82%、84%、85.2%。</p>
+<p>这不是谁在造假，是统计范围不同：85.2% 是"全球 AI 眼镜"（不含 AR/VR），81% 是"眼穿戴全品类"（含 VR，Meta 在 VR 里也有份额，但被稀释），75.7% 可能是某个季度或某个区域。引用的时候必须说清楚是哪个口径。</p>
+<h3>2.4 扫地机的"全球第一"是谁</h3>
+<p>这个最有意思。2026 年 Q1 是追觅（23.7%），Q2 是石头（23.7%），上半年合计按 IDC 口径又是石头第一。三个说法都对，因为：</p>
+<ul>
+<li>季度之间排名会换；</li>
+<li>追觅有单品牌口径和"追觅 + MOVA"合并口径（合并后上半年销量 26.1%、销额 31.2%）；</li>
+<li>出货量份额和销售额份额排名不一样（Q2 石头量第一，但额也是第一；Q1 追觅额 28% 高于量 23.7%，说明它卖得更贵）。</li>
+</ul>
+<h3>2.5 出货、销量、激活、零售额</h3>
+<p>这四个词在这个行业经常混用：</p>
+<ul>
+<li><strong>出货（sell-in）</strong>：厂家卖给渠道，最漂亮的数，压货也算；</li>
+<li><strong>销量（sell-out）</strong>：渠道卖给消费者；</li>
+<li><strong>激活量</strong>：真正开机联网的，最真实，但很少有公司披露；</li>
+<li><strong>零售额</strong>：金额口径，受均价影响大。</li>
+</ul>
+<p>中国扫地机 2026 上半年线上销量跌 11.3%、零售额跌 6.7%、均价涨 5.2%——量跌得比额多，说明是"涨价保额"，不是需求变好。</p>
+<h3>2.6 "智能硬件"到底包括什么</h3>
+<p>我这份笔记的边界是：<strong>消费级、带计算和连接能力、能独立完成某个任务的硬件</strong>。具体包括可穿戴（手表、手环、耳机、戒指、眼镜）、清洁电器（扫地机、洗地机、割草机、泳池机器人）、智能影像（运动相机、全景相机、无人机）、智能家居（门锁、摄像头、投影、音箱）、以及 AI 玩具这类新品类。</p>
+<p>不包括：手机、PC、平板（它们是"母体"不是"配件"）、白电（冰箱洗衣机，智能化程度低）、工业设备。</p>
+<p>这个边界是我自己划的，别人划得不一样很正常。</p>
+<h2>三、现状：一台手机跌 22%，一副眼镜涨 263%</h2>
+<h3>3.1 手机在退，新品类在进</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">品类</th>
+<th style="text-align: left;">2026 年读数</th>
+<th style="text-align: left;">同比</th>
+<th style="text-align: left;">阶段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">全球智能手机</td>
+<td style="text-align: left;">Q3 出货 2.553 亿部</td>
+<td style="text-align: left;"><strong>-22%</strong></td>
+<td style="text-align: left;">衰退，历史最大单季降幅</td>
+</tr>
+<tr>
+<td style="text-align: left;">AI 眼镜</td>
+<td style="text-align: left;">H1 711 万台</td>
+<td style="text-align: left;"><strong>+70.5%</strong>（Counterpoint 口径 +263%）</td>
+<td style="text-align: left;">爆发早期</td>
+</tr>
+<tr>
+<td style="text-align: left;">扫地机器人</td>
+<td style="text-align: left;">Q2 全球 788.5 万台</td>
+<td style="text-align: left;"><strong>+21.5%</strong></td>
+<td style="text-align: left;">成长期，海外主导</td>
+</tr>
+<tr>
+<td style="text-align: left;">清洁机器人（全品类）</td>
+<td style="text-align: left;">Q2 1120.5 万台</td>
+<td style="text-align: left;">+21.5%</td>
+<td style="text-align: left;">成长期</td>
+</tr>
+<tr>
+<td style="text-align: left;">割草机器人</td>
+<td style="text-align: left;">Q2 93.9 万台</td>
+<td style="text-align: left;"><strong>+59.7%</strong></td>
+<td style="text-align: left;">爆发早期</td>
+</tr>
+<tr>
+<td style="text-align: left;">泳池机器人</td>
+<td style="text-align: left;">Q2 153.3 万台</td>
+<td style="text-align: left;">-6.3%</td>
+<td style="text-align: left;">短期调整</td>
+</tr>
+<tr>
+<td style="text-align: left;">VR 头显</td>
+<td style="text-align: left;">Q1 全球</td>
+<td style="text-align: left;">双位数下滑</td>
+<td style="text-align: left;">衰退</td>
+</tr>
+</tbody>
+</table>
+<p>手机跌 22% 这个数要小心解读。IDC 的原文是"创下有记录以来最大单季降幅"，直接原因是存储涨价推高了整机成本、厂商减少低端出货。<strong>它不是"没人买手机了"，是"低端机不做了"</strong>。但对上游结构件、模组、组装厂来说，低端机不做就是实打实的订单消失——蓝思科技前三季营收跌 10.7%、净利跌 50%，就是这个链条的反应。</p>
+<h3>3.2 国内和海外是两个市场、两个阶段</h3>
+<p>扫地机是最好的样本：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">指标</th>
+<th style="text-align: left;">中国</th>
+<th style="text-align: left;">海外</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">2026 H1 出货/零售</td>
+<td style="text-align: left;">线上 243.8 万台（-11.3%）</td>
+<td style="text-align: left;">欧洲 Q1 231.8 万台（+81.4%），北美 +5.7%</td>
+</tr>
+<tr>
+<td style="text-align: left;">渗透率</td>
+<td style="text-align: left;">6%–8%</td>
+<td style="text-align: left;">15%–20%（欧美）</td>
+</tr>
+<tr>
+<td style="text-align: left;">竞争性质</td>
+<td style="text-align: left;">存量抢份额，CR3 73%</td>
+<td style="text-align: left;">增量扩张，渠道铺货</td>
+</tr>
+<tr>
+<td style="text-align: left;">均价</td>
+<td style="text-align: left;">3273.8 元（+5.2%）</td>
+<td style="text-align: left;">更高，且有定价权</td>
+</tr>
+<tr>
+<td style="text-align: left;">清退</td>
+<td style="text-align: left;">上半年线上清退 11 个品牌</td>
+<td style="text-align: left;">中国品牌加速进 Target、Best Buy</td>
+</tr>
+</tbody>
+</table>
+<p><strong>国内是成熟存量期，海外是规模扩张期。</strong> 这句话能解释为什么石头的净利率能到 11.3%（2026H1，归母 +62%、扣非 +111%）——它的境外收入占 56%，欧洲市占 45%、北美 33%，赚的是海外高价市场的钱。同期国内品牌在打价格战。</p>
+<p>科沃斯也在往这个方向走：海外品牌收入占比 49%，二季度首次超过国内（51%）。</p>
+<h3>3.3 存储涨价这只黑天鹅</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">时间</th>
+<th style="text-align: left;">内存价格变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">2025 Q3 – 2026 Q1</td>
+<td style="text-align: left;">翻倍以上</td>
+</tr>
+<tr>
+<td style="text-align: left;">2026 Q2</td>
+<td style="text-align: left;">再涨 80%–90%</td>
+</tr>
+</tbody>
+</table>
+<p>这是 AI 数据中心抢产能的连带后果——HBM 和服务器内存吃掉晶圆产能，消费级 DRAM/NAND 供给被挤。对智能硬件的影响是全面的：</p>
+<ul>
+<li>手机：整机成本上升，低端机砍单（-22%）；</li>
+<li>扫地机：BOM 里存储占比不高，但主控和模组涨价，中低端品牌利润被压没；</li>
+<li>眼镜：主控和存储都在涨，但高端产品还能靠定价权消化。</li>
+</ul>
+<p><strong>头部能消化，尾部直接出局。</strong> 这是上半年 11 个扫地机品牌被清退的直接原因。</p>
+<h3>3.4 国补：一次性的需求前置</h3>
+<p>2026 年初智能眼镜首次纳入国补。效果很直接：1 到 2 月智能眼镜网络零售额同比 +183.5%。但这是<strong>把下半年的需求提前到了上半年</strong>，不是创造新需求。看全年数据的时候要把这个因素剔掉。</p>
+<h2>四、产业链与价值分配</h2>
+<h3>4.1 微笑曲线：上游 46%，品牌 39%，组装 15%</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">环节</th>
+<th style="text-align: right;">利润占比</th>
+<th style="text-align: left;">代表</th>
+<th style="text-align: left;">特点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">上游设计与核心制造</td>
+<td style="text-align: right;">46%</td>
+<td style="text-align: left;">恒玄、瑞芯微、乐鑫、索尼、高通</td>
+<td style="text-align: left;">芯片、光学、传感器，毛利 40%–50%</td>
+</tr>
+<tr>
+<td style="text-align: left;">下游品牌与生态</td>
+<td style="text-align: right;">39%</td>
+<td style="text-align: left;">苹果、Meta、小米、石头、安克</td>
+<td style="text-align: left;">品牌溢价 + 渠道，毛利 20%–48%</td>
+</tr>
+<tr>
+<td style="text-align: left;">中游整机组装</td>
+<td style="text-align: right;">15%</td>
+<td style="text-align: left;">歌尔、立讯、蓝思、华勤、龙旗</td>
+<td style="text-align: left;">毛利 8%–15%，靠规模和良率</td>
+</tr>
+</tbody>
+</table>
+<p>这个 15% 比 2020 年下降了 7 个百分点。组装环节在贬值，因为自动化程度提高、可替代性强。</p>
+<h3>4.2 三个品类的 BOM</h3>
+<p><strong>带显示的 AI 眼镜</strong>（整机 3000–5000 元）：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">部件</th>
+<th style="text-align: right;">成本占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">光学显示模组（光波导 + MicroLED）</td>
+<td style="text-align: right;">35%–45%</td>
+</tr>
+<tr>
+<td style="text-align: left;">主控芯片</td>
+<td style="text-align: right;">20%–30%</td>
+</tr>
+<tr>
+<td style="text-align: left;">摄像头与传感器</td>
+<td style="text-align: right;">10%–15%</td>
+</tr>
+<tr>
+<td style="text-align: left;">电池与结构件</td>
+<td style="text-align: right;">10%–15%</td>
+</tr>
+<tr>
+<td style="text-align: left;">组装测试</td>
+<td style="text-align: right;">8%–12%</td>
+</tr>
+</tbody>
+</table>
+<p>无显示版本去掉了光波导和微显示屏，成本能降一半以上，重量也能做到 35–40 克。这就是为什么 2026 年上半年无显示产品占了 96%——不是用户不想要显示，是价格和重量还不允许。</p>
+<p><strong>扫地机器人</strong>（整机 2000–4000 元）：激光雷达/视觉模组约 15%，电池 10%，电机与泵 15%，主板与芯片 15%，结构件 20%，基站 15%，组装 10%。基站越复杂（自清洁、自动集尘、上下水），成本越往基站倾斜。</p>
+<p><strong>TWS 耳机</strong>（整机 200–1000 元）：SoC 约 20%，声学器件 20%，电池 8%，结构件 25%，组装 15%。这个品类的 BOM 已经高度标准化，所以价格战打得最狠。</p>
+<h3>4.3 毛利率分布：芯片最高，组装最低</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">公司</th>
+<th style="text-align: left;">环节</th>
+<th style="text-align: right;">2026 前三季毛利率</th>
+<th style="text-align: right;">净利率</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">乐鑫科技</td>
+<td style="text-align: left;">Wi-Fi/蓝牙 SoC</td>
+<td style="text-align: right;">49.97%</td>
+<td style="text-align: right;">约 24.6%（Q3）</td>
+</tr>
+<tr>
+<td style="text-align: left;">安克创新</td>
+<td style="text-align: left;">品牌（充电、智能创新、影音）</td>
+<td style="text-align: right;">48.44%</td>
+<td style="text-align: right;">约 8.6%</td>
+</tr>
+<tr>
+<td style="text-align: left;">恒玄科技</td>
+<td style="text-align: left;">智能音频/眼镜 SoC</td>
+<td style="text-align: right;">42.27%</td>
+<td style="text-align: right;">约 10%（前三季）</td>
+</tr>
+<tr>
+<td style="text-align: left;">影石创新</td>
+<td style="text-align: left;">智能影像品牌</td>
+<td style="text-align: right;">38.21%</td>
+<td style="text-align: right;">待披露</td>
+</tr>
+<tr>
+<td style="text-align: left;">歌尔股份</td>
+<td style="text-align: left;">声学整机 + 精密零组件</td>
+<td style="text-align: right;">13.68%</td>
+<td style="text-align: right;">约 3.8%</td>
+</tr>
+</tbody>
+</table>
+<p>一个规律：<strong>毛利率高不代表净利率高</strong>。安克毛利 48%，但销售费用率极高（亚马逊广告、线下渠道），净利率只有 8% 左右；歌尔毛利 13.7%，净利率 3.8%，靠 682 亿的营收规模赚钱。这两种是完全不同的生意。</p>
+<h2>五、技术：五个真问题</h2>
+<h3>5.1 端侧算力：够用就行，不是越强越好</h3>
+<p>AI 眼镜的主控有三条路线：高通 AR 系列（性能强、贵、功耗高）、恒玄（低功耗、Meta Ray-Ban 的核心供应商）、瑞芯微（给小米供 10 TOPS 的芯片）。</p>
+<p>关键不是 TOPS 数字，是<strong>每瓦能跑多少推理</strong>。眼镜的电池只有 200–300mAh，整机重量压在 35–40 克，散热面积几乎为零。算力再高，跑十分钟就降频，用户体验一样崩。</p>
+<p>所以这一轮的竞争点是"把 7B 模型量化到 1–3B、跑在 2W 以内"，不是堆算力。</p>
+<h3>5.2 光学与显示：成本的大头，也是体验的分水岭</h3>
+<p>带显示的眼镜，光学模组占成本 35% 到 45%。两条路线：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">路线</th>
+<th style="text-align: left;">优点</th>
+<th style="text-align: left;">缺点</th>
+<th style="text-align: left;">现状</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">光波导 + MicroLED</td>
+<td style="text-align: left;">透光率高、形态接近普通眼镜</td>
+<td style="text-align: left;">贵、良率低、单绿色为主</td>
+<td style="text-align: left;">高端产品在用，全彩还在攻关</td>
+</tr>
+<tr>
+<td style="text-align: left;">Birdbath（反射式）</td>
+<td style="text-align: left;">成本低、成像质量好</td>
+<td style="text-align: left;">体积大、重、透光差</td>
+<td style="text-align: left;">观影类 AR 在用</td>
+</tr>
+</tbody>
+</table>
+<p>2026 年上半年带显示产品只占 4%（约 73 万台，2025 年数据），但同比 +449%。基数小、增速快，说明还在早期。</p>
+<p>真正的拐点会是"全彩 MicroLED 光波导成本降到 1000 元以内"，我估计还要两三年。</p>
+<h3>5.3 传感器与健康监测：从"记录"到"干预"</h3>
+<p>可穿戴的增长几乎全来自健康功能。2026 年具备 ECG 和连续血糖监测（CGM）的手表出货突破 9200 万台。腕戴式占可穿戴的 78%。</p>
+<p>这块的门槛不在传感器，在<strong>医疗认证和算法</strong>。拿到二类医疗器械证，就能进医保个人账户支付（部分地区已经放开），这是质变——从消费电子变成医疗设备，付费方从个人变成医保。</p>
+<p>但 CGM 的无创方案目前精度还不够，真正能用的还是侵入式（贴片）。</p>
+<h3>5.4 重量与电池：物理约束</h3>
+<p>AI 眼镜的重量对比很说明问题：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">产品</th>
+<th style="text-align: right;">重量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">华为</td>
+<td style="text-align: right;">35.5 克</td>
+</tr>
+<tr>
+<td style="text-align: left;">理想 Livis</td>
+<td style="text-align: right;">约 36 克</td>
+</tr>
+<tr>
+<td style="text-align: left;">雷鸟 V4</td>
+<td style="text-align: right;">38 克</td>
+</tr>
+<tr>
+<td style="text-align: left;">Rokid Style</td>
+<td style="text-align: right;">38.5 克</td>
+</tr>
+<tr>
+<td style="text-align: left;">蓝思方案整机</td>
+<td style="text-align: right;">49 克</td>
+</tr>
+</tbody>
+</table>
+<p>普通眼镜大约 20–25 克。<strong>超过 40 克，戴一天就会不舒服</strong>，这是硬约束。所以电池不能大，算力不能高，散热要靠结构设计——三个约束互相打架。</p>
+<p>这也是为什么"无显示"先跑通：省掉显示模组，重量和功耗都能下来。</p>
+<h3>5.5 连接与生态：Matter 解决了一半问题</h3>
+<p>智能家居的碎片化靠 Matter 缓解，已有 280 多家公司采用。但它只解决了"设备能互相识别"，没解决"谁来当控制中枢"。苹果、谷歌、亚马逊、小米各有一套，用户买了跨品牌的设备，体验还是割裂的。</p>
+<p>国内还有星闪（NearLink）在推，主打低时延、高并发，但目前生态还小。</p>
+<h2>六、品类拆解</h2>
+<h3>6.1 一张表看清六个品类</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">品类</th>
+<th style="text-align: left;">2026 规模</th>
+<th style="text-align: left;">增速</th>
+<th style="text-align: left;">集中度</th>
+<th style="text-align: left;">中国地位</th>
+<th style="text-align: left;">我的判断</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">TWS 耳机</td>
+<td style="text-align: left;">全球 5.2 亿副</td>
+<td style="text-align: left;">+8.3%</td>
+<td style="text-align: left;">高，苹果小米三星</td>
+<td style="text-align: left;">制造强，品牌中</td>
+<td style="text-align: left;">存量替换，靠降价</td>
+</tr>
+<tr>
+<td style="text-align: left;">智能手表/手环</td>
+<td style="text-align: left;">全球 3.1 亿只</td>
+<td style="text-align: left;">中个位数</td>
+<td style="text-align: left;">高</td>
+<td style="text-align: left;">华为小米份额高</td>
+<td style="text-align: left;">健康功能是唯一增量</td>
+</tr>
+<tr>
+<td style="text-align: left;">扫地机器人</td>
+<td style="text-align: left;">全球 2412 万台（2025）</td>
+<td style="text-align: left;">+17%–21%</td>
+<td style="text-align: left;">前五 75%</td>
+<td style="text-align: left;"><strong>全是中国品牌</strong></td>
+<td style="text-align: left;">最好的赛道：份额+利润都有</td>
+</tr>
+<tr>
+<td style="text-align: left;">智能影像</td>
+<td style="text-align: left;">影石前三季 94 亿</td>
+<td style="text-align: left;">20%+</td>
+<td style="text-align: left;">大疆影石双寡头</td>
+<td style="text-align: left;">中国主导</td>
+<td style="text-align: left;">高毛利，靠品牌</td>
+</tr>
+<tr>
+<td style="text-align: left;">AI 眼镜</td>
+<td style="text-align: left;">全球 1700 万台（2026E）</td>
+<td style="text-align: left;">+70%–263%</td>
+<td style="text-align: left;">Meta 84%</td>
+<td style="text-align: left;">制造 80%，品牌弱</td>
+<td style="text-align: left;">最大的变量，也是最大的泡沫风险</td>
+</tr>
+<tr>
+<td style="text-align: left;">AI 玩具</td>
+<td style="text-align: left;">无统一口径</td>
+<td style="text-align: left;">爆发</td>
+<td style="text-align: left;">极分散</td>
+<td style="text-align: left;">中国主导</td>
+<td style="text-align: left;">生命周期短，看 IP</td>
+</tr>
+</tbody>
+</table>
+<h3>6.2 可穿戴：存量市场里的健康溢价</h3>
+<p>TWS 已经是存量替换市场，全球 5.2 亿副、增速 8.3%，靠的是换机和低价位段扩张。这个品类的 BOM 高度标准化，所以价格战最凶，毛利一路往下。</p>
+<p>手表不一样。它的增量来自健康功能：ECG、血氧、睡眠、血压趋势、CGM。2026 年带健康监测的手表出货 2.7 亿只，占绝大多数。华为、小米、苹果三家的份额稳定，其他品牌很难挤进去。</p>
+<p>我的看法：可穿戴的天花板不在硬件，在<strong>医疗资质</strong>。谁先把无创血糖做出可用的精度并拿到认证，谁就能重新定价。</p>
+<h3>6.3 清洁电器：唯一"份额和利润都拿到了"的品类</h3>
+<p>这个品类值得单独说，因为它是中国制造的样板。</p>
+<p>2026 年 Q2 全球前五全是中国品牌：石头 23.7%、追觅 21.2%、科沃斯 16.2%、小米、MOVA，合计 75%（量）和 82%（额）。曾经的品类开创者 iRobot，份额从 2024 年的 13.7% 掉到 2025 年上半年的 7.9%，2026 年 1 月被深圳杉川收购。</p>
+<p>为什么能赢？三个原因：</p>
+<ol>
+<li><strong>供应链密度</strong>：激光雷达、电机、电池、结构件，深圳周边两小时车程能配齐；</li>
+<li><strong>迭代速度</strong>：中国厂商一年出两三代，iRobot 两年一代；</li>
+<li><strong>基站创新</strong>：自清洁、自动集尘、上下水，这些"重"功能是中国高层住宅的刚需，欧美厂商没做。</li>
+</ol>
+<p>但国内已经很卷：上半年线上量跌 11.3%、额跌 6.7%，均价涨 5.2%，3000 元以上机型份额从 54% 升到 65%——<strong>靠涨价和高端化维持增长，量已经在退</strong>。增量在海外，欧洲 Q1 +81.4%。</p>
+<h3>6.4 智能影像：高毛利的少数派</h3>
+<p>影石创新 2026 前三季营收 94.36 亿、毛利 38.21%，消费级影像设备占 86.79%，配件 11.31%，境外 62.3%。这个品类的好处是<strong>配件复购率高</strong>（电池、镜头、支架），坏处是市场小、天花板低。</p>
+<p>大疆在这个领域是另一个量级的存在，但它没上市，数据不透明。</p>
+<h3>6.5 AI 眼镜：最大的变量，也是最需要冷静的品类</h3>
+<p>我把它单独拎出来，因为它是 2026 年最热的故事，也是最容易看错的。</p>
+<p><strong>乐观的一面：</strong>
+- 出货确实在爆发，上半年 +70% 到 +263%（口径不同）；
+- 供应链成熟，全球 80% 在中国，从光学到整机都能做；
+- 无显示产品的价格已经降到 1000–2000 元，接近"冲动消费"区间；
+- 国补把它纳入了补贴范围。</p>
+<p><strong>需要冷静的一面：</strong>
+- 退货率 30% 到 70%，说明大量购买是"尝鲜"而非"刚需"；
+- 200 多项 AI 功能长期使用率不足 6%，说明功能堆砌没有转化为使用；
+- Meta 占 84%，中国品牌合计不到 10%，份额和品牌溢价都在对方手里；
+- 带显示产品只占 4%，真正的"AR"还很远。</p>
+<p><strong>我的判断</strong>：AI 眼镜会成为一个真实的品类，但不会是"下一代计算平台"。它的定位更接近"带摄像头的蓝牙耳机 + 语音助手"，年出货量在 3000 万到 5000 万台会碰到第一个天花板。要突破，得等"全彩显示 + 全天续航 + 40 克以内"同时实现。</p>
+<h3>6.6 智能家居与 AI 玩具：分散、短周期</h3>
+<p>智能家居（门锁、摄像头、投影、音箱）的特点是<strong>品类多、单品小、生态割据</strong>。2026 上半年中国智能门锁零售 743 万套、智能投影 205.6 万台，都是百万级市场。Matter 缓解了互联互通，但没解决"谁当中枢"。</p>
+<p>AI 玩具是 2026 年的新热点，靠大模型做语音陪伴。这个品类的特点是<strong>起量快、生命周期短、IP 依赖强</strong>。它的壁垒不在硬件（方案商一套公版就能做），在 IP 和内容运营。我倾向于把它看成"内容生意披了硬件外壳"，不是硬件生意。</p>
+<h2>七、商业模式</h2>
+<h3>7.1 三种钱</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">模式</th>
+<th style="text-align: left;">代表</th>
+<th style="text-align: left;">毛利</th>
+<th style="text-align: left;">现金流</th>
+<th style="text-align: left;">风险</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">卖硬件</td>
+<td style="text-align: left;">小米、石头、科沃斯</td>
+<td style="text-align: left;">20%–45%</td>
+<td style="text-align: left;">一次性，账期短</td>
+<td style="text-align: left;">价格战、库存</td>
+</tr>
+<tr>
+<td style="text-align: left;">硬件 + 配件</td>
+<td style="text-align: left;">影石、大疆</td>
+<td style="text-align: left;">35%–45%</td>
+<td style="text-align: left;">复购稳定</td>
+<td style="text-align: left;">品类天花板</td>
+</tr>
+<tr>
+<td style="text-align: left;">硬件 + 服务/订阅</td>
+<td style="text-align: left;">苹果、Meta、部分安防</td>
+<td style="text-align: left;">硬件低毛利，服务高毛利</td>
+<td style="text-align: left;">长期、可预测</td>
+<td style="text-align: left;">需要装机量</td>
+</tr>
+</tbody>
+</table>
+<p>中国公司大多停在第一种和第二种，第三种很少。原因是<strong>订阅需要生态和账号体系</strong>，而这正是中国硬件公司最弱的一环。</p>
+<h3>7.2 出海：不是选择题，是必答题</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">公司</th>
+<th style="text-align: right;">境外收入占比</th>
+<th style="text-align: left;">主要市场</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">安克创新</td>
+<td style="text-align: right;">94.73%（2026H1）</td>
+<td style="text-align: left;">北美、欧洲、日本</td>
+</tr>
+<tr>
+<td style="text-align: left;">影石创新</td>
+<td style="text-align: right;">62.30%（2026H1）</td>
+<td style="text-align: left;">欧美</td>
+</tr>
+<tr>
+<td style="text-align: left;">恒玄科技</td>
+<td style="text-align: right;">64.21%（2026H1）</td>
+<td style="text-align: left;">全球（供 Meta 等）</td>
+</tr>
+<tr>
+<td style="text-align: left;">石头科技</td>
+<td style="text-align: right;">56%（2025），2026H1 境外 60.73 亿</td>
+<td style="text-align: left;">欧洲 45%、北美 33%</td>
+</tr>
+<tr>
+<td style="text-align: left;">科沃斯</td>
+<td style="text-align: right;">海外品牌收入 49%（Q2 51%）</td>
+<td style="text-align: left;">欧洲、东南亚</td>
+</tr>
+</tbody>
+</table>
+<p>出海的共同点：<strong>先做亚马逊，再做线下渠道，最后做品牌</strong>。安克是这条路线的教科书——它的销售费用率极高（亚马逊广告 + 线下进场费），所以毛利 48% 但净利只有 8% 左右。这是"用利润换份额"的打法。</p>
+<h3>7.3 品类生命周期在缩短</h3>
+<p>我粗略算了一下几个品类的"从爆发到红海"的时间：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">品类</th>
+<th style="text-align: left;">爆发年</th>
+<th style="text-align: left;">进入价格战</th>
+<th style="text-align: left;">间隔</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">TWS</td>
+<td style="text-align: left;">2017</td>
+<td style="text-align: left;">2020</td>
+<td style="text-align: left;">3 年</td>
+</tr>
+<tr>
+<td style="text-align: left;">扫地机（中国）</td>
+<td style="text-align: left;">2019</td>
+<td style="text-align: left;">2022</td>
+<td style="text-align: left;">3 年</td>
+</tr>
+<tr>
+<td style="text-align: left;">洗地机</td>
+<td style="text-align: left;">2021</td>
+<td style="text-align: left;">2023</td>
+<td style="text-align: left;">2 年</td>
+</tr>
+<tr>
+<td style="text-align: left;">AI 眼镜</td>
+<td style="text-align: left;">2025</td>
+<td style="text-align: left;">2026</td>
+<td style="text-align: left;"><strong>1 年</strong></td>
+</tr>
+</tbody>
+</table>
+<p>原因有三个：方案商（公版方案）成熟太快、供应链复制太快、电商渠道放大太快。结果是<strong>谁能在一个品类里建立品牌，谁就必须在 18 个月内把利润赚回来</strong>，之后就是价格战。</p>
+<h2>八、瓶颈</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">瓶颈</th>
+<th style="text-align: left;">现状</th>
+<th style="text-align: left;">硬度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">同质化</td>
+<td style="text-align: left;">公版方案 3 个月出货，200+ 品牌挤进 AI 眼镜</td>
+<td style="text-align: left;">最硬，结构性</td>
+</tr>
+<tr>
+<td style="text-align: left;">AI 功能无付费意愿</td>
+<td style="text-align: left;">200+ 功能使用率 &lt;6%，退货率 30%–70%</td>
+<td style="text-align: left;">硬</td>
+</tr>
+<tr>
+<td style="text-align: left;">上游涨价</td>
+<td style="text-align: left;">内存 18 个月涨 3 倍以上</td>
+<td style="text-align: left;">硬，不可控</td>
+</tr>
+<tr>
+<td style="text-align: left;">渠道库存</td>
+<td style="text-align: left;">出货压给渠道，终端动销慢</td>
+<td style="text-align: left;">中</td>
+</tr>
+<tr>
+<td style="text-align: left;">国内存量</td>
+<td style="text-align: left;">扫地机线上量 -11.3%，清退 11 个品牌</td>
+<td style="text-align: left;">中</td>
+</tr>
+<tr>
+<td style="text-align: left;">品牌溢价</td>
+<td style="text-align: left;">Meta 84% 份额 vs 中国品牌合计 &lt;10%</td>
+<td style="text-align: left;">长期</td>
+</tr>
+</tbody>
+</table>
+<p><strong>前三项是我最担心的。</strong> 同质化决定了毛利下行，AI 功能无付费意愿决定了溢价不可持续，上游涨价决定了尾部出清。三件事叠加，2027 年这个行业会有一次比较明显的洗牌。</p>
+<h2>九、格局</h2>
+<h3>9.1 三类玩家</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">类型</th>
+<th style="text-align: left;">代表</th>
+<th style="text-align: left;">优势</th>
+<th style="text-align: left;">劣势</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">手机/生态厂</td>
+<td style="text-align: left;">小米、华为、苹果、三星</td>
+<td style="text-align: left;">渠道、账号体系、品牌</td>
+<td style="text-align: left;">硬件不是主业，投入分散</td>
+</tr>
+<tr>
+<td style="text-align: left;">专业品牌</td>
+<td style="text-align: left;">石头、追觅、科沃斯、影石、大疆</td>
+<td style="text-align: left;">品类专注、迭代快</td>
+<td style="text-align: left;">生态弱，抗风险能力差</td>
+</tr>
+<tr>
+<td style="text-align: left;">白牌/方案商</td>
+<td style="text-align: left;">深圳大量中小厂</td>
+<td style="text-align: left;">成本低、反应快</td>
+<td style="text-align: left;">无品牌，随时被清退</td>
+</tr>
+</tbody>
+</table>
+<p>2026 年的趋势是<strong>专业品牌在赢单品，生态厂在赢入口</strong>。扫地机、影像这类"功能明确"的品类，专业品牌更有优势；眼镜、耳机这类"依附手机"的品类，生态厂更有优势。</p>
+<h3>9.2 国内 vs 全球：两套排名</h3>
+<p>以扫地机为例：</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">市场</th>
+<th style="text-align: left;">第一</th>
+<th style="text-align: left;">第二</th>
+<th style="text-align: left;">第三</th>
+<th style="text-align: right;">CR3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">全球（2026 Q2，出货量）</td>
+<td style="text-align: left;">石头 23.7%</td>
+<td style="text-align: left;">追觅 21.2%</td>
+<td style="text-align: left;">科沃斯 16.2%</td>
+<td style="text-align: right;">61.1%</td>
+</tr>
+<tr>
+<td style="text-align: left;">中国线上（2026 H1）</td>
+<td style="text-align: left;">科沃斯 34.2%</td>
+<td style="text-align: left;">石头 26.1%</td>
+<td style="text-align: left;">追觅 12.8%</td>
+<td style="text-align: right;">73.1%</td>
+</tr>
+</tbody>
+</table>
+<p>同一批公司，排名完全不同。原因是<strong>国内靠渠道和价格，海外靠品牌和产品力</strong>。追觅在国内只有 12.8%，但在全球是第二——它的重心在海外。</p>
+<h3>9.3 谁在赚钱</h3>
+<p>从毛利和净利看：</p>
+<ul>
+<li><strong>最赚钱</strong>：芯片（乐鑫毛利 50%、净利 24.6%）、品牌出海（石头净利 11.3%）；</li>
+<li><strong>赚辛苦钱</strong>：整机品牌（安克毛利 48%、净利 8.6%）；</li>
+<li><strong>最不赚钱</strong>：组装（歌尔毛利 13.7%、净利 3.8%）、传统结构件（蓝思净利 -50%）。</li>
+</ul>
+<p>这个排序和十年前比，最大的变化是<strong>组装环节被挤到了最底下</strong>。自动化 + 中国产能过剩，让"制造"这件事本身不值钱了。</p>
+<h2>十、空间测算：三种情景</h2>
+<p>这一节是我的估算，误差不会小。基准是全球智能硬件出货 46.5 亿台、规模 5820 亿美元（2026），行业 CAGR 假设 8.1%（多家机构的中位数）。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">情景</th>
+<th style="text-align: left;">假设</th>
+<th style="text-align: right;">2030 年全球规模</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">保守</td>
+<td style="text-align: left;">CAGR 5%，手机继续退，AI 眼镜停在 3000 万台</td>
+<td style="text-align: right;">约 7100 亿美元</td>
+</tr>
+<tr>
+<td style="text-align: left;">中性</td>
+<td style="text-align: left;">CAGR 8.4%，AI 眼镜到 5000 万台，扫地机海外翻倍</td>
+<td style="text-align: right;">约 8700 亿美元</td>
+</tr>
+<tr>
+<td style="text-align: left;">乐观</td>
+<td style="text-align: left;">CAGR 12.5%，AI 眼镜破 1 亿台，AI 玩具/机器人放量</td>
+<td style="text-align: right;">约 1.05 万亿美元</td>
+</tr>
+</tbody>
+</table>
+<p>拆解（中性情景，2030）：</p>
+<ul>
+<li>TWS 与耳机：6 亿副 × 60 美元 ≈ 360 亿美元</li>
+<li>手表手环：3.6 亿只 × 180 美元 ≈ 650 亿美元</li>
+<li>扫地与清洁机器人：4500 万台 × 450 美元 ≈ 200 亿美元</li>
+<li>AI 眼镜：5000 万台 × 320 美元 ≈ 160 亿美元</li>
+<li>智能影像：3000 万台 × 400 美元 ≈ 120 亿美元</li>
+<li>智能家居（门锁、摄像头、投影、音箱）：约 2500 亿美元</li>
+<li>其他（玩具、健身、宠物、健康）：约 1200 亿美元</li>
+</ul>
+<p>加起来约 5190 亿美元，和 8700 亿有差距——差额主要在"智能家居"和"其他"两块，这两块的口径我拿不准，只能给个大概。</p>
+<p><strong>几个我比较有把握的判断：</strong></p>
+<ol>
+<li>AI 眼镜 2030 年到 5000 万台是合理的中性预期（对应 2026–2030 年 CAGR 约 31%），1 亿台需要"显示 + 重量 + 价格"同时突破；</li>
+<li>扫地机的增量在海外，全球出货从 2412 万台（2025）到 4500 万台（2030）需要欧洲和北美渗透率从 15%–20% 提到 30%；</li>
+<li>手表手环的天花板取决于医疗资质，如果无创血糖落地，这个品类能重估。</li>
+</ol>
+<h2>十一、风险</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">风险</th>
+<th style="text-align: left;">影响</th>
+<th style="text-align: center;">概率</th>
+<th style="text-align: left;">我怎么看</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">AI 眼镜证伪</td>
+<td style="text-align: left;">品类回落，供应链产能闲置</td>
+<td style="text-align: center;">中高</td>
+<td style="text-align: left;">退货率 30%–70% 已经是预警信号</td>
+</tr>
+<tr>
+<td style="text-align: left;">存储继续涨价</td>
+<td style="text-align: left;">中低端品牌集体亏损</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: left;">取决于 AI 数据中心的需求何时见顶</td>
+</tr>
+<tr>
+<td style="text-align: left;">国内价格战</td>
+<td style="text-align: left;">毛利进一步下行</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: left;">扫地机已经在发生</td>
+</tr>
+<tr>
+<td style="text-align: left;">海外关税与合规</td>
+<td style="text-align: left;">出海毛利被侵蚀</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: left;">欧盟数据法案、美国关税都在收紧</td>
+</tr>
+<tr>
+<td style="text-align: left;">品牌溢价拿不到</td>
+<td style="text-align: left;">长期给上游和渠道打工</td>
+<td style="text-align: center;">高</td>
+<td style="text-align: left;">这是结构性问题，不是周期问题</td>
+</tr>
+<tr>
+<td style="text-align: left;">估值透支</td>
+<td style="text-align: left;">大幅回撤</td>
+<td style="text-align: center;">中高</td>
+<td style="text-align: left;">板块按成长股定价，但多数是制造业</td>
+</tr>
+<tr>
+<td style="text-align: left;">品类生命周期过短</td>
+<td style="text-align: left;">研发投入收不回</td>
+<td style="text-align: center;">中</td>
+<td style="text-align: left;">AI 玩具、AI 眼镜都有这个风险</td>
+</tr>
+</tbody>
+</table>
+<p>我个人的排序：<strong>近期最该担心的是 AI 眼镜证伪和估值，中期是存储涨价，长期是品牌溢价拿不到。</strong></p>
+<h2>十二、公司数据</h2>
+<p>数据来自 2026 年三季报与 2025 年年报，单位人民币。</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">公司</th>
+<th style="text-align: left;">代码</th>
+<th style="text-align: left;">环节</th>
+<th style="text-align: right;">2025 营收</th>
+<th style="text-align: right;">2026 前三季营收</th>
+<th style="text-align: right;">毛利率</th>
+<th style="text-align: right;">境外占比</th>
+<th style="text-align: left;">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">安克创新</td>
+<td style="text-align: left;">300866</td>
+<td style="text-align: left;">品牌（充电/创新/影音）</td>
+<td style="text-align: right;">305.1 亿</td>
+<td style="text-align: right;">261.4 亿</td>
+<td style="text-align: right;">48.44%</td>
+<td style="text-align: right;">94.7%</td>
+<td style="text-align: left;">毛利高但销售费用极高，净利率约 8.6%</td>
+</tr>
+<tr>
+<td style="text-align: left;">影石创新</td>
+<td style="text-align: left;">688775</td>
+<td style="text-align: left;">智能影像品牌</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">94.4 亿</td>
+<td style="text-align: right;">38.21%</td>
+<td style="text-align: right;">62.3%</td>
+<td style="text-align: left;">配件复购是利润来源，2025 年上市</td>
+</tr>
+<tr>
+<td style="text-align: left;">歌尔股份</td>
+<td style="text-align: left;">002241</td>
+<td style="text-align: left;">声学整机 + 精密零组件</td>
+<td style="text-align: right;">965.5 亿</td>
+<td style="text-align: right;">682.2 亿</td>
+<td style="text-align: right;">13.68%</td>
+<td style="text-align: right;">83.7%</td>
+<td style="text-align: left;">规模最大、毛利最薄，AI 眼镜整机放量</td>
+</tr>
+<tr>
+<td style="text-align: left;">恒玄科技</td>
+<td style="text-align: left;">688608</td>
+<td style="text-align: left;">智能音频/眼镜 SoC</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">21.5 亿</td>
+<td style="text-align: right;">42.27%</td>
+<td style="text-align: right;">64.2%</td>
+<td style="text-align: left;">Meta Ray-Ban 核心供应商，净利 -57%</td>
+</tr>
+<tr>
+<td style="text-align: left;">乐鑫科技</td>
+<td style="text-align: left;">688018</td>
+<td style="text-align: left;">Wi-Fi/蓝牙 SoC</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">23.7 亿</td>
+<td style="text-align: right;">49.97%</td>
+<td style="text-align: right;">32.3%</td>
+<td style="text-align: left;">毛利与净利双高，Q3 净利 +89%</td>
+</tr>
+<tr>
+<td style="text-align: left;">蓝思科技</td>
+<td style="text-align: left;">300433</td>
+<td style="text-align: left;">结构件与组装</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">479.0 亿</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: left;">营收 -10.7%、净利 -50%，存储涨价的受害者</td>
+</tr>
+</tbody>
+</table>
+<p>几个观察：</p>
+<p><strong>规模最大的是歌尔（682 亿），最赚钱的是乐鑫（净利率 24.6%）。</strong> 这两个数放在一起，就是这条产业链的缩影——组装赚规模，芯片赚利润。</p>
+<p><strong>恒玄的财报最值得注意。</strong> 它是 Meta Ray-Ban 的核心供应商，按理说应该受益于 AI 眼镜爆发，但 2026 前三季净利跌 57%。原因有两个：一是消费电子整体需求疲软（TWS 是它的基本盘），二是新品导入期的价格压力。这说明<strong>"给爆款供货"不等于"跟着爆款赚钱"</strong>。</p>
+<p><strong>安克是"高毛利、低净利"的典型。</strong> 48% 的毛利看着很好，但亚马逊广告、线下进场费、物流仓储把净利压到 8.6%。这是品牌出海的真实成本结构。</p>
+<p><strong>蓝思是"上游涨价"的直接受害者。</strong> 营收跌 10.7% 是因为手机低端机砍单，净利跌 50% 是因为存储和面板涨价 + 产能利用率下降。它也在往 AI 眼镜结构件、服务器液冷转，但新业务还补不上老业务的缺口。</p>
+<hr>
+<p>写到这里。这个行业我最不确定的两件事：一是 AI 眼镜到底是"新一代入口"还是"带摄像头的耳机"（我倾向前者被高估、后者被低估），二是中国品牌能不能在海外把溢价做起来（扫地机证明可以，眼镜还没证明）。这两点如果有变化，前面的判断要跟着改。</p>
+</body>
+</html>
